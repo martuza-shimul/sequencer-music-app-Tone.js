@@ -28,13 +28,13 @@ body {
 .kick,
 .snare {
   position: relative;
-  display: flex;
-  justify-content: space-around;
+  display: flex; 
+   justify-content: space-around;
   align-items: center;
   margin: 10px 0;
 }
 
-/* .kick > input,
+.kick > input,
 .snare > input {
   margin: 20px 20px;
 }
@@ -56,4 +56,4 @@ body {
 .snare input::after {
   
   background: rgb(161, 72, 233);
-} */
+}
