@@ -28,8 +28,8 @@ body {
 .kick,
 .snare {
   position: relative;
-  display: flex; 
-   justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
   align-items: center;
   margin: 10px 0;
 }
@@ -39,21 +39,31 @@ body {
   margin: 20px 20px;
 }
 
+/* .kick input[type="checkbox"]:focus{
+  background: #000;
+} */
+
 .kick input::before,
 .snare input::after {
   content: "";
   position: absolute;
   height: 150%;
   width: 9%;
-  
-  
 }
 .kick input::before {
   top: -30%;
   background: rgb(210, 245, 82);
-  
 }
 .snare input::after {
-  
   background: rgb(161, 72, 233);
+}
+.kick input[type="checkbox"]:checked::before {
+  background: rgb(50, 243, 33);
+}
+.snare input[type="checkbox"]:checked::after {
+  background: rgb(50, 243, 33);
+}
+.beatbox:hover::before,
+.beatbox:hover::after {
+  background: rgb(223, 39, 39);
 }
